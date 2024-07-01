@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Reporte de Basura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="icono trash scan.png" alt="icono-trash-scan" id="icono-trash-scan">
+        <h1 id="titulo">Simulación de reporte</h1>
+    </header>
+    <img src="google-maps-22.jpg" alt="imagen-mapa" width="500px" height="280vh" id="imagenmapa">
+    <main>
+        <section id="section-photo">
+            <h2>Subir Foto</h2>
+            <input type="file" id="photo-input">
+            <textarea id="description-input" placeholder="Añadir ubicación..."></textarea>
+            <button id="add-report">Añadir Reporte</button>
+        </section>
+        <section id="reports-section">
+            <h2>Reportes</h2>
+            <div id="reports-container"></div>
+        </section>
+    </main>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=APIKEY=places&callback=initMap"
+      defer
+    ></script>
+    <script src="script.js"></script>
+</body>
+</html>
